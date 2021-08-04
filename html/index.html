@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0, minimum-scale=1, maximum-scale=1.0">
+    <title>Carlo! | Car Rent System</title>
+    <!--Swiper.js used in client testimonial-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <header id="main-header">
+            <h1>CARLO!</h1>
+            <br>
+            <h6><em>HAMARI GAARI, AAPKI SAWARI</em></h6>
+            <img src="../images/Logo.png" alt="">
+    </header>
+        <nav id="nav-bar">
+            <div class="container">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="book-now.html">Book Now</a></li>
+                    <li><a href="cars.html">Cars</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="containerR">
+            <div class="icon-cards">
+                <div class="icon-cards-content">
+                    <div class="icon-cards-item"><img src="../images/Honda Civic.png"  alt=""></div>
+                    <div class="icon-cards-item"><img src="../images/Toyota Fortuner.png"  alt=""></div>
+                    <div class="icon-cards-item"><img src="../images/Suzuki Cultus.png" alt=""></div>
+                    <div class="icon-cards-item"><img src="../images/Kia Sportage.png" alt=""></div>
+                    <div class="icon-cards-item"><img src="../images/Audi.png"  alt=""></div>
+                </div>
+            </div>
+        </div>
+        <div class="containerSF">
+            <div class="slider-frame">
+                <div class="slide-content" id="scontent">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <div class="content first">
+                        <p>
+                            Toyota<br>Corolla Altis
+                            <span style="display: block; padding-top: 30px;">PKR 5,500/Day</span>
+                        </p>
+                        <img src="../Cars Images/Toyota Corolla Altis.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <p>
+                            Honda<br>City
+                            <span style="display: block; padding-top: 30px;">PKR 4,000/Day</span>
+                        </p>
+                        <img src="../Cars Images/Honda City 2019.png" alt="">
+                    </div>
+                    <div class="content">
+                        <p>
+                            Suzuki<br>Swift
+                            <span style="display: block; padding-top: 30px;">PKR 3,500/Day</span>
+                        </p>
+                        <img src="../Cars Images/Suzuki Swift.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <p>
+                            Toyota<br>Hilux
+                            <span style="display: block; padding-top: 30px;">PKR 12,000/Day</span>
+                        </p>
+                        <img src="../Cars Images/Toyota Hilux.jpg" alt="">
+                    </div>
+                    <div class="auto-nav">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+                </div>
+                <div class="manual-nav" id="m-nav">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="contact" id="contactform">
+                <form name="signup" method="POST" action="../php/register.php" autocomplete="on">
+                    <div class="header">
+                        <h1 class="header-title">S<span>ign Up</span></h1>
+                    </div>
+                    <label for="cnic" class="form-table">CNIC Number</label>
+                    <input type="text" name="cnic" class="form-input" placeholder="xxxxx-xxxxxxx-x" maxlength="15" pattern="[0-9]{5}-[0-9]{7}-[0-9]{1}" required>
+                    <label for="name" class="form-table">Name</label>
+                    <input type="text" name="name" class="form-input" placeholder="Enter your name" required>
+                    <label for="DOB" class="form-table">Date of Birth</label>
+                    <input type="date" name="dob" class="form-input" placeholder="Enter your date of birth">
+                    <label for="email" class="form-table">Email</label>
+                    <input type="email" name="email" class="form-input" placeholder="abc@xyz.com" required>
+                    <label for="address" class="form-table">Address</label>
+                    <input type="text" name="address" class="form-input" placeholder="House address" required>
+                    <label for="phone" class="form-table">Phone Number</label>
+                    <input type="text" name="phone" class="form-input" placeholder="03xx-xxxxxxx" maxlength="12" pattern="[0][3][0-9]{2}-[0-9]{7}" required>
+                    <label for="message" class="form-table">Additional Request</label>
+                    <textarea type="text" name="message" id="" cols="30" rows="10" placeholder="Any extra request" class="textarea"></textarea>
+                    <input type="submit" class="btn-submit" name="Submit" id="Submit" value="SUBMIT">
+                </form>
+            </div>
+        </div>
+        <!-- Client Testimonial Section -->
+        <div class="container">
+            <h2>Customer Response</h2>
+            <section>
+                <!-- Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="testimonialBox">
+                                <img src="../images/right-quote.png" class="quote" alt="" style="width: 40px; height: 40px;">
+                                <div class="reviews">
+                                    <p>This is the second time I\'ve used CARLO, and I whole-heartedly recommend them to anyone 
+                                        looking for a rental car. Everyone I\'ve dealt with has been courteous and helpful. 
+                                        Pick-up and drop-off is hassle-free, which is really priceless.</p>
+                                        <div class="details">
+                                            <div class="img-box">
+                                                <img src="../images/user1.jpg" alt="">
+                                            </div>
+                                            <h3>Syed Talal<br><span>Mon Apr 26, 2021</span></h3>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonialBox">
+                                <img src="../images/right-quote.png" class="quote" alt="" style="width: 40px; height: 40px;">
+                                <div class="reviews">
+                                    <p>This was a seamless process for my first time booking a rental. In comparison to other 
+                                        rental company rates, Carlo had the most reasonable prices. I do commend the customer 
+                                        service, so that is a big plus for me.</p>
+                                        <div class="details">
+                                            <div class="img-box">
+                                                <img src="../images/user2.jpg" alt="">
+                                            </div>
+                                            <h3>Ahmed Tahir Shekhani<br><span>Sun Dec 20, 2020</span></h3>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonialBox">
+                                <img src="../images/right-quote.png" class="quote" alt="" style="width: 40px; height: 40px;">
+                                <div class="reviews">
+                                    <p>Fantastic service! The staff is very knowledgeable and understanding. Would definitely rent again.</p>
+                                        <div class="details">
+                                            <div class="img-box">
+                                                <img src="../images/user3.jpg" alt="">
+                                            </div>
+                                            <h3>Abdul Rafe Haider Khan<br><span>Tue Mar 23, 2021</span></h3>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonialBox">
+                                <img src="../images/right-quote.png" class="quote" alt="" style="width: 40px; height: 40px;">
+                                <div class="reviews">
+                                    <p>Best price, high quality car, honest and friendly staff, super fast and easy. 
+                                        Perhaps the best rental transaction I\'ve ever had. I would DEFINITELY rent from this outfit again.</p>
+                                        <div class="details">
+                                            <div class="img-box">
+                                                <img src="../images/user4.jpg" alt="">
+                                            </div>
+                                            <h3>Huzaifah Hasan<br><span>Sun Oct 18, 2020</span></h3>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonialBox">
+                                <img src="../images/right-quote.png" class="quote" alt="" style="width: 40px; height: 40px;">
+                                <div class="reviews">
+                                    <p>I've rented from Carlo a couple of times and they are quick and courteous. The car was ready, clean and full 
+                                        of gas, liked the free cooler came very handy. Their vehicles are well cared for and their prices can't 
+                                        be beaten! I will definitely rent from them again. Highly recommended!</p>
+                                        <div class="details">
+                                            <div class="img-box">
+                                                <img src="../images/user5.jpg" alt="">
+                                            </div>
+                                            <h3>Sarmed Ahmed Usmani<br><span>Fri Apr 9, 2021</span></h3>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer class="main-footer">
+            <div class="container">
+                <div class="social">
+                    <span>Stay Connected</span>
+                    <ul>
+                        <li><a href="#"><span></span></a></li>
+                        <li><a href="#"><span></span></a></li>
+                        <li><a href="#"><span></span></a></li>
+                        <li><a href="#"><span></span></a></li>
+                    </ul>
+                </div>
+                <div class="footer-right">
+                    <p>
+                        Contact Us | Phone: +92 21 1110 53353
+                        <br>    
+                        &copy; Carlo! 2021 - All Rights Reserved
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <script src="../javascript/2Dslider-script.js"></script>
+        <!--Swiper.js used in client testimonial-->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="../javascript/Swiper-script.js"></script>
+</body>
+</html>
